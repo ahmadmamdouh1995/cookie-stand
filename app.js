@@ -69,6 +69,7 @@ var tokyo = {
         ulE1.appendChild(liE2);
         liE2.textContent = `Total : ${this.totalCookie} cookies`;
     }
+    
 }
 tokyo.render();
 
