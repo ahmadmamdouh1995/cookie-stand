@@ -97,6 +97,16 @@ var dubai = new Shop('Dubai', 38, 11, 3.7);
 var paris = new Shop('Paris', 38, 20, 2.3);
 var lima = new Shop('Lima', 16, 2, 4.6);
 
+
+
+tableHeaderRow();
+for (var i = 0; i < shop.length; i++) {
+    shop[i].numOfCookie();
+    shop[i].tableDataRow();
+}
+
+// table1.removeChild(table1.lastChild);
+totalOfTotal();
 var myform = document.getElementById('NewShop');
 myform.addEventListener('submit', function(event){
     event.preventDefault();
@@ -110,20 +120,27 @@ myform.addEventListener('submit', function(event){
     console.log(min);
     var avarege = event.target.avarege.value;
     console.log(avarege);
-    var shopObjct = new Shop(name,max,min,avarege);
+    max = parseInt(max);
+    min = parseInt(min);
+    avarege = parseFloat(avarege);
     // shopObjct.randCookie();
-    shopObjct.numOfCookie();
-    shopObjct.tableDataRow();
-    // shopObjct.totalOfTotal();
-    myform.reset();
+    if ( max > min ){
+        var shopObjct = new Shop(name,max,min,avarege);
+        table1.removeChild(table1.lastChild);
+        shopObjct.numOfCookie();
+        shopObjct.tableDataRow();
+        // shopObjct.totalOfTotal();
+        totalOfTotal();
+    
+        myform.reset();
+        
+
+    } else{
+        alert('Max Number Of Coustmer MUST BE GRATER THAN Min Number Of Coustmer');
+    }
 });
 
 
-tableHeaderRow();
-for (var i = 0; i < shop.length; i++) {
-    shop[i].numOfCookie();
-    shop[i].tableDataRow();
-}
-totalOfTotal();
+
 
 
