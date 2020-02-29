@@ -1,11 +1,41 @@
-* {
-    margin: 0px;
+ul{
+    display: inline-block;
+    background-color: rgb(140, 162, 235);
+    font-family: Dancing Script;
 }
 header{
     align-content: center;
+    background-color: rgb(204, 171, 235);
+    font-family: Pacifico;
+
 }
  main{
      text-align: center;
      font-size: 24px;
+     background-color: rgb(133, 133, 248);
+     font-family: Oxanium;
 
+ }
+ footer{
+     text-align: center;
+ }
+ NewShop{
+     text-align: left;
+     display: inline;
+     background-color: cornsilk;
+ }
+ saleimg{
+     display: inline-block;
+     
+ }
+ #salefooter{
+     background-color: rgb(42, 173, 173);
+     display: inline-block;
+     font-family: Permanent Marker ;
+
+
+ }
+ #sale{
+     padding: 50px;
+     border: rgb(58, 116, 202);
  }
