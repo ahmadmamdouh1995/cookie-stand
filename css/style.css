@@ -39,3 +39,8 @@ header{
      padding: 50px;
      border: rgb(58, 116, 202);
  }
+ #salefooter{
+     text-align: center;
+     font-size: 50px;
+     font: bold;
+ }
